@@ -1,5 +1,22 @@
 // 🦁 Importe cette fonction
-// import { prompt } from "./helper.js";
+import { prompt } from "./helper.js";
+
+// 🦁 Affiche le message "ADDITION-MASTER ™️" dans la console
+let firstNumber = Number(await prompt("Enter the first number : "));
+
+if (Number.isNaN(firstNumber)) {
+  console.log("The first number is not a number");
+  process.exit(1);
+}
+
+let secondNumber = Number(await prompt("Enter the second number : "));
+
+if (secondNumber === 0 || Number.isNaN(secondNumber)) {
+  console.log("The second number can't be 0 or it is not a number");
+  process.exit(1);
+}
+
+console.log("The sum is : ", firstNumber / secondNumber);
 
 console.log("ADDITION-MASTER ™️");
 
