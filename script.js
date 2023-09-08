@@ -7,13 +7,12 @@ let message = await prompt("Enter your message : ");
 
 console.log("NODE-MAILER ™️");
 
-console.log(mail, object, message);
-
 console.log("Envoi du mail en cours...");
 
-console.log("To user : " + mail);
-console.log("Object : " + object);
-console.log("Message : " + message);
+console.log(`To user : ${mail}
+Object : ${object}
+Message : ${message}
+`);
 
 // 🦁 Récupère le mail, l'objet et le message
 
