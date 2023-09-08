@@ -1,7 +1,19 @@
 // 🦁 Importe cette fonction
-// import { prompt } from "./helper.js";
+import { prompt } from "./helper.js";
+
+let mail = await prompt("Enter recipient your mail : ");
+let object = await prompt("Enter your object : ");
+let message = await prompt("Enter your message : ");
 
 console.log("NODE-MAILER ™️");
+
+console.log(mail, object, message);
+
+console.log("Envoi du mail en cours...");
+
+console.log("To user : " + mail);
+console.log("Object : " + object);
+console.log("Message : " + message);
 
 // 🦁 Récupère le mail, l'objet et le message
 
